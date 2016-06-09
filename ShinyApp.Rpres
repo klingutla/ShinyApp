@@ -1,0 +1,30 @@
+Shiny Application
+========================================================
+author: Coursera Student
+date: 6/9/2016
+autosize: true
+
+Introduction
+========================================================
+
+This project will provide tools to query the mtcars dataset. This dataset contains information on 11 types of data on 32 cars. 
+
+
+Summary of mtcars
+========================================================
+
+```{r}
+summary(mtcars)
+```
+
+Box Plot metween MPG and Cylinders
+========================================================
+
+```{r, echo=FALSE}
+boxplot(mpg ~ am, data = mtcars, col = (c("blue","green")), ylab = "MPG", xlab = "Cylinders")
+```
+
+Conclusion
+========================================================
+
+The previous slides show strong correlation between cylinders and MPG. An application to search for cars based on these parameters will be useful.
